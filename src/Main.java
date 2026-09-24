@@ -16,5 +16,9 @@ public class Main {
 
         List<Integer> greaterThan30 = list.stream().filter(n->n>30).collect(Collectors.toList());
         System.out.println(greaterThan30);
+
+        List<Integer> greaterThan20AndEven = list.stream().filter(n->n>20).filter(n-> n%2==0).collect(Collectors.toList());
+
+        System.out.println(greaterThan20AndEven);
     }
 }
