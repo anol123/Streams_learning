@@ -20,5 +20,13 @@ public class Main {
         List<Integer> greaterThan20AndEven = list.stream().filter(n->n>20).filter(n-> n%2==0).collect(Collectors.toList());
 
         System.out.println(greaterThan20AndEven);
+
+
+
+        //Create a new list where every number is multiplied by 2.
+
+        List<Integer> multipliedBy2 = list.stream().map(n-> n*2).collect(Collectors.toList());
+
+        System.out.println(multipliedBy2);
     }
 }
