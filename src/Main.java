@@ -31,8 +31,8 @@ public class Main {
 
         //Find the sum of all even numbers.
 
-//        int sumOfEvenNos = list.stream().filter(n->n%2==0).mapToInt(n->n).sum();
-//
-//        System.out.println(sumOfEvenNos);
+        int sumOfEvenNos = list.stream().filter(n->n%2==0).mapToInt(n->n).sum();
+
+        System.out.println(sumOfEvenNos);
     }
 }
