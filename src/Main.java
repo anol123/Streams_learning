@@ -25,9 +25,9 @@ public class Main {
 
         //Create a new list where every number is multiplied by 2.
 
-        List<Integer> multipliedBy2 = list.stream().map(n-> n*2).collect(Collectors.toList());
-
-        System.out.println(multipliedBy2);
+//        List<Integer> multipliedBy2 = list.stream().map(n-> n*2).collect(Collectors.toList());
+//
+//        System.out.println(multipliedBy2);
 
         //Find the sum of all even numbers.
 
