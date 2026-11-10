@@ -12,5 +12,10 @@ public class Main {
                 new Employee(5, "Karan", "IT", 60000),
                 new Employee(6, "Neha", "HR", 55000)
         );
+
+        employees.stream()
+                .filter(emp->emp.getDepartment().equals("IT"))
+                .forEach(emp->System.out.println(emp.getName()));
+
     }
 }
