@@ -17,5 +17,9 @@ public class Main {
                 .filter(emp->emp.getDepartment().equals("IT"))
                 .forEach(emp->System.out.println(emp.getName()));
 
+        employees.stream()
+                .filter(emp->emp.getSalary()>60000)
+                .forEach(emp->System.out.println(emp.getName()));
+
     }
 }
