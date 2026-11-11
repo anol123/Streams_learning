@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,9 +18,17 @@ public class Main {
                 .filter(emp->emp.getDepartment().equals("IT"))
                 .forEach(emp->System.out.println(emp.getName()));
 
-        employees.stream()
+//        employees.stream()
+//                .filter(emp->emp.getSalary()>60000)
+//                .forEach(emp->System.out.println(emp.getName()));
+
+
+        //using collect(Collectors.toList()) and later using forEach() to print
+        List<Employee> employee_list = employees.stream()
                 .filter(emp->emp.getSalary()>60000)
-                .forEach(emp->System.out.println(emp.getName()));
+                .collect(Collectors.toList());
+
+        employee_list.forEach(emp-> System.out.println(emp.getName()));
 
     }
 }
