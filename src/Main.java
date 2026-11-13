@@ -20,9 +20,9 @@ public class Main {
 
 //      using forEach() in streams
 
-        employees.stream()
-                .filter(emp->emp.getSalary()>60000)
-                .forEach(emp->System.out.println(emp.getName()));
+//        employees.stream()
+//                .filter(emp->emp.getSalary()>60000)
+//                .forEach(emp->System.out.println(emp.getName()));
 
 
         //using collect(Collectors.toList()) and later using forEach() to print
