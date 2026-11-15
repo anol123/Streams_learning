@@ -26,11 +26,11 @@ public class Main {
 
 
         //using collect(Collectors.toList()) and later using forEach() to print
-//        List<Employee> employee_list = employees.stream()
-//                .filter(emp->emp.getSalary()>60000)
-//                .collect(Collectors.toList());
-//
-//        employee_list.forEach(emp-> System.out.println(emp.getName()));
+        List<Employee> employee_list = employees.stream()
+                .filter(emp->emp.getSalary()>60000)
+                .collect(Collectors.toList());
+
+        employee_list.forEach(emp-> System.out.println(emp.getName()));
 
     }
 }
